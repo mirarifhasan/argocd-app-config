@@ -1,4 +1,4 @@
-FROM node as base
+FROM arm64v8/node as base
 
 WORKDIR /app
 COPY package.json \
@@ -25,7 +25,7 @@ RUN yarn
 RUN yarn build
 
 # use one of the smallest images possible
-FROM node
+FROM arm64v8/node
 # get package.json from base
 COPY --from=base /app/package.json ./
 # get the dist back
