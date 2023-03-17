@@ -36,4 +36,4 @@ COPY --from=base /app/node_modules/ ./node_modules/
 # EXPOSE 8077
 # start
 
-ENTRYPOINT ["node", "dist/src/main.js"]
+ENTRYPOINT ["node", "dist/main.js"]
