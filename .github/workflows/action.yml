@@ -29,7 +29,7 @@ jobs:
         run: npm run test
 
   build:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
