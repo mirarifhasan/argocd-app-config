@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/mirarifhasan/nestjs-cicd.git
+    repoURL: https://github.com/mirarifhasan/argocd-app-config.git
     targetRevision: HEAD
     path: deployments
   destination:
